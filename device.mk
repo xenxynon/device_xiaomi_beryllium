@@ -13,6 +13,8 @@ $(call inherit-product, vendor/xiaomi/beryllium/beryllium-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2246
 TARGET_SCREEN_WIDTH := 1080
 
+include official-settings/sign.mk
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -22,7 +24,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-xdroid
 
 PRODUCT_PACKAGES += \
     BerylliumNoCutoutOverlay
