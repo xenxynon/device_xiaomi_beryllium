@@ -13,7 +13,7 @@ $(call inherit-product, vendor/xiaomi/beryllium/beryllium-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2246
 TARGET_SCREEN_WIDTH := 1080
 
-include official-settings/sign.mk
+include overlay/config.mk
 
 # FM
 PRODUCT_PACKAGES += \
@@ -97,5 +97,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
-
-include overlay/config.mk
